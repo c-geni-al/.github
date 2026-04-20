@@ -2,7 +2,7 @@
 
 **Executable formal frameworks for cognitive AI.**
 
-A small research lab running an open-science programme on knowledge consolidation in artificial cognitive systems. Based in Grandris, Auvergne-Rhône-Alpes, France. 100 % open-source. Code : MIT (most repos) / Apache-2.0 (`micro-kiki`, inherited from Qwen). Docs : CC-BY-4.0.
+A small research lab running an open-science programme on knowledge consolidation in artificial cognitive systems. Based in Grandris, Beaujolais, Auvergne-Rhône-Alpes, France. 100 % open-source. Code : MIT (most repos) / Apache-2.0 (`micro-kiki`, inherited from Qwen). Docs : CC-BY-4.0.
 
 ---
 
