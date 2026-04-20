@@ -61,7 +61,7 @@ Open-science discipline is public-by-default :
   - **B-2 MI migration** — `Me3_delta > 0.10 bit`
   - **B-3 Perceptive/proprioceptive asymmetry** — `Me6 max-abs off-diag > 0.02`
   Built on top of `nerve-wml` (shared neuroletter codebook, γ/θ multiplexing) with adaptive gating, adaptive codebook expansion, and learnable cross-modal transducers.
-  **State (2026-04-20)** — 62 commits, 5 tags (`v0.0.1-sprint0` → `v0.1.1`), 152 test items. Sprints 0 → 4 closed with **ADR-0003 honest NO-GO on B-1/B-2/B-3** (scoped to v0.1 CLI coverage gaps, not engine failure). Sprint 5 in progress : Tasks 5.1 – 5.3 merged, Task 5.4 v0.2 Studio grid running, `v0.2.0` tag pending Tasks 5.5 – 5.6. Thresholds locked to the OSF pre-registration plan ; dedicated OSF record will mint when the repo is mirrored. Python 3.14, Hydra-driven configs, MIT.
+  **State (2026-04-20, v0.3.0)** — 66 commits, 7 tags, 152 test items, 5 ADRs. Sprint history : 0→4 closed with **ADR-0003** honest NO-GO (v0.1 CLI coverage gaps) ; Sprint 5 closed with **ADR-0004** real v0.2 verdicts on GaussianWorld (**B-3 PASS at 7.4× threshold**, B-1 directionally falsified, B-2 under threshold) ; Sprint 6 opened with **ADR-0005 cross-world replication** on XOR + Sinusoid (Task 6.1 `--world` CLI flag + Task 6.2 3-world grids, 3×150 cells). **Headline finding : B-3 is world-agnostic** — medians 0.141–0.156 across all three synthetic worlds, all ~7-8× the pre-registered threshold. B-1 exhibits a **topology-dependent sign flip** (negative on orthogonal-factored Gaussian/XOR, positive on circular-latent Sinusoid) — seeds hypothesis H-B1 for a future OSF amendment. Thresholds fixed per OSF pre-registration ; dedicated OSF record mints when repo is mirrored. Python 3.14, Hydra-driven configs, MIT.
 
 ### Private
 
@@ -99,10 +99,10 @@ Open-science discipline is public-by-default :
               │ shared codebook           │ gate-llm-advisor-passed
               ▼ (γ/θ multiplexer)         │ (NerveWmlAdvisor)
    ┌──────────────────────┐               │
-   │  bouba_sens v0.1.1   │               │
+   │  bouba_sens v0.3.0   │               │
    │  5-modality lesion   │               │
-   │  B-1/B-2/B-3 invar.  │               │
-   │  Sprint 5 in flight  │               │
+   │  B-3 PASS 3/3 worlds │               │
+   │  ADRs 0003→0005      │               │
    └──────────────────────┘               │
                                           ▼
                                (integration back into micro-kiki runtime)
@@ -163,4 +163,4 @@ For L'Electron Rare business (embedded systems consulting, FineFab platform, Kil
 
 ---
 
-*Last updated : 2026-04-20 (deep-refresh from live repo state). Snapshot : dream-of-kiki `v0.6.0` / DualVer `C-v0.7.0+PARTIAL` (201 commits, 277 tests / 91 % cov, Paper 1 v0.2 PLOS CB pivot), kiki-flow-research 153 commits + `paper-v0.7-draft` + `phase1-pilot10k-done` (Zenodo DOI live), nerve-wml `v1.2.3` (184 commits, 10 gates, 3 substrates, MNIST 1.03 % gap, Zenodo DOI live), micro-kiki `v0.3-rc1` HEAD `44b1a01` (437 commits, 971 tests, kiki-flow bridge merged, Zenodo DOI live), bouba_sens `v0.1.1` (62 commits, Sprint 5 in flight).*
+*Last updated : 2026-04-20 21:05 CEST (deep-refresh from live repo state, post Sprint 5 + Sprint 6 opening). Snapshot : dream-of-kiki `v0.6.0` / DualVer `C-v0.7.0+PARTIAL` (201 commits, 277 tests / 91 % cov, Paper 1 v0.2 PLOS CB pivot, scaling-law `p_max` 15 OOM collapse 1.5B→7B), kiki-flow-research 153 commits + `paper-v0.7-draft` + `phase1-pilot10k-done` (Zenodo DOI live), nerve-wml `v1.2.3` (184 commits, 10 gates, 3 substrates MlpWML+LifWML+TransformerWML, MNIST 1.03 % gap, Zenodo DOI live), micro-kiki `v0.3-rc1` HEAD `44b1a01` (437 commits, 971 tests, kiki-flow bridge merged, Zenodo DOI live), **bouba_sens `v0.3.0`** (66 commits, 5 ADRs, **B-3 cross-world PASS on 3/3 worlds at 7-8× threshold — first cross-world replicated finding of the programme**).*
