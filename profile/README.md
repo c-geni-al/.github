@@ -52,7 +52,7 @@ Open-science discipline is public-by-default :
   Cognitive layer : **Aeon** memory (SIMD-vector Atlas + neuro-symbolic Trace graph), **CAMP** negotiator with Catfish dissent, **KnowBias** double-filter (RBD + DeFrame). New `kiki-flow` serving bridge merged at HEAD (v0.3 advisory-routing integration).
   *Adjacent research artefact* — triple-hybrid **Quantum VQC + SNN + Classical** routing documented in `docs/paper-outline-triple-hybrid.md` (Paper B, ICONS / Frontiers target). **Validated as PoC, not in the production runtime.**
   Latest tag `v0.3-rc1`, 437 commits on `bridge-surrogate-v0.3`, **971 test functions across 126 test files**. Zenodo concept DOI [10.5281/zenodo.19666759](https://doi.org/10.5281/zenodo.19666759), v0.3.0 DOI [10.5281/zenodo.19666760](https://doi.org/10.5281/zenodo.19666760). Apache-2.0 (inherited).
-  *Training datasets + adapter-mixing experiments live in the sibling operational repo* [`L-electron-Rare/KIKI-Mac_tunner`](https://github.com/L-electron-Rare/KIKI-Mac_tunner) *(out-of-scope for the research lab).*
+  *Training datasets + adapter-mixing experiments live in the shared fine-tuning infrastructure* [`L-electron-Rare/KIKI-Mac_tunner`](https://github.com/L-electron-Rare/KIKI-Mac_tunner) — *a joint MLX pipeline (Mac Studio M3 Ultra / M4 Pro) operated from the L'Électron Rare organisation and used to train both FineFab industrial models and Hypneum research substrates ; models and hyperparameter search are versioned separately per programme.*
 
 ### Behavioural benchmark
 
@@ -160,7 +160,7 @@ See [`CONTRIBUTING.md`](https://github.com/hypneum-lab/dream-of-kiki/blob/main/C
 
 Research / collaboration inquiries : `clement@saillant.cc`
 
-For L'Electron Rare business (embedded systems consulting, FineFab platform, Kill_LIFE / Mascarade products, AURA regional partnerships) see [lelectronrare.fr](https://lelectronrare.fr) — that activity runs on the separate [L-electron-Rare](https://github.com/L-electron-Rare) GitHub organisation.
+For L'Electron Rare business (embedded systems consulting, FineFab platform, Kill_LIFE / Mascarade products, AURA regional partnerships) see [lelectronrare.fr](https://lelectronrare.fr). Business codebase and shared fine-tuning infrastructure (`KIKI-Mac_tunner`) live on the separate [L-electron-Rare](https://github.com/L-electron-Rare) GitHub organisation ; the MLX toolkit is used to train both industrial and Hypneum research models, with separate data and run_registry keys per programme.
 
 ---
 
