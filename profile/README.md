@@ -131,8 +131,9 @@ See each repo's `docs/ARCHITECTURE.md` / design spec for the detailed interface 
 ## People
 
 - **Clément Saillant** — founder, corresponding author, maintainer.
-  [GitHub](https://github.com/electron-rare) · [L'Electron Rare](https://lelectronrare.fr) · `clement@saillant.cc`
-  Embedded Systems & AI Architect, Grandris (69), Auvergne-Rhône-Alpes, France.
+  [GitHub](https://github.com/electron-rare) · [L'Électron Rare](https://www.lelectronrare.fr/) · [Blog](https://blog.saillant.cc) · `clement@saillant.cc`
+  Founder of L'Électron Rare — custom electronic systems (design, consulting, training): electronics, automation, energy. 10 years of field experience. Open-source contributor (KiCad, KXKM). Research at Hypneum Lab is conducted alongside this consulting activity, guided by intuition and a disciplined use of AI as a scientific research tool; the verifiability of artefacts (pre-registration, null-milestone, reproducibility) is the chosen counterpart of a non-traditional path.
+  Grandris (69), Auvergne-Rhône-Alpes, France.
 - Future visiting collaborators and co-authors would be credited per publication.
 
 ---
@@ -160,7 +161,7 @@ See [`CONTRIBUTING.md`](https://github.com/hypneum-lab/dream-of-kiki/blob/main/C
 
 Research / collaboration inquiries : `clement@saillant.cc`
 
-For L'Electron Rare business (embedded systems consulting, FineFab platform, Kill_LIFE / Mascarade products, AURA regional partnerships) see [lelectronrare.fr](https://lelectronrare.fr). Business codebase and shared fine-tuning infrastructure (`KIKI-Mac_tunner`) live on the separate [L-electron-Rare](https://github.com/L-electron-Rare) GitHub organisation ; the MLX toolkit is used to train both industrial and Hypneum research models, with separate data and run_registry keys per programme.
+For L'Électron Rare business (custom electronic systems design and consulting — electronics, automation, energy · training · FineFab platform · Kill_LIFE / Mascarade products · AURA regional partnerships) see [www.lelectronrare.fr](https://www.lelectronrare.fr/). Business codebase and shared fine-tuning infrastructure (`KIKI-Mac_tunner`) live on the separate [L-electron-Rare](https://github.com/L-electron-Rare) GitHub organisation ; the MLX toolkit is used to train both industrial and Hypneum research models, with separate data and run_registry keys per programme.
 
 ---
 
