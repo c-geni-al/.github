@@ -6,6 +6,51 @@ A small research lab running an open-science programme on knowledge consolidatio
 
 ---
 
+## 2026-05-11 portfolio milestones — N8 → N14 sprints
+
+Six-sprint push closed tonight across the three active scientific
+repos (`nerve-wml`, `dream-of-kiki`, `bouba_sens`) :
+
+- **12 OSF-style pre-registrations** cumulative across the programme
+  (N1 → N14), all locked before evidence collection.
+- **7 verdicts shipped** on the GammaThetaMultiplexer + plasticity
+  axis :
+  - N8 Q1 GTM benchmark on HardFlowProxyTask N=2 → **tied**
+  - N9 Q1+ scaling N=16 → **tied-stable**
+  - N9 Q1++ FlowProxyTask 4-class → **tied-stable-cross-task**
+  - N8 Q2 15 adversarial substrates Cat A/B/C → **`ge_3_FP_reformulate`**, Conformance Criterion strengthened to **C+** (now requires C2 axiom property tests)
+  - N9 Q2+ Cat D / E / F (10 more) → **25 / 25 cumulative FP**
+  - N9 Q3 INTERIM Retract (Jonckheere wrong test) →
+  - **N9 Q3+ FINAL Retract** on `bouba_sens` §5.5 (quadratic regression, sign p=0.62, t-test p=0.28). TMLR submission BLOCKED until reformulation.
+- **5 pre-regs deferred** to future scaling sprints (N10-A ImageNet
+  + ResNet50 + GTM bottleneck β-VAE β=1.0, N10-C Procgen multi-agent,
+  N11-A I-JEPA + GTM predictor, N11-C Dreamer V3 + GTM dynamics on
+  Atari-100k, N13 OFAT + N14 Latin Hypercube — all locked tonight,
+  implementations gated on hardware capacity).
+- **N12 subgroup replication RUNNING** on `root@kx6tm-23` (Hypneum
+  compute node bootstrapped 2026-05-11), tactile-floor +
+  force-plus10 candidates from `bouba_sens` pooled-v2 discovery,
+  N=20 seeds, ETA ~07:30 morning.
+- **6 critic-driven fixes shipped** : ablation void → cosine
+  plasticity ; degenerate metrics handled ; Cat C honest framing
+  (1 % / 6 % / 80 % per-substrate, no overstatement) ;
+  Jonckheere → quadratic regression ; β-VAE β=1.0 confound fixed ;
+  paper / JSON count mismatch reconciled.
+- **Methodology rule promoted portfolio-wide** :
+  multi-seed-first-class. The Q3 5-seed → 10-seed collapse is the
+  canonical case study ; single-seed (or under-seeded) claims are
+  now a hard pre-publication gate.
+
+Tonight's snapshot of the three active repos :
+
+| Repo | HEAD | Commits | Version | Headline |
+|---|---|---|---|---|
+| `nerve-wml` (master) | `7528ada` | 295 | **v1.8.1** | GTM tied-stable on N=2 / N=16 / cross-task ; 4 scaling pre-regs locked (ImageNet, Procgen, I-JEPA, Atari) |
+| `dream-of-kiki` (main) | `15efb95` | 479 | **v0.10.0** | Paper 1 v0.2 §5.8 honest per-substrate FP framing ; Conformance Criterion C → **C+** |
+| `bouba_sens` (main) | `3fbeee7` | 156 | **v0.5.9** | §5.5 FINAL Retract (ADR-0019) ; TMLR BLOCKED ; N12 sweep running |
+
+---
+
 ## What we work on
 
 The lab builds executable formal frameworks that bridge cognitive-neuroscience theory and machine-learning practice. The flagship programme axiomatises **dream-based knowledge consolidation** and instantiates it on two structurally divergent substrates — an MLX gradient-based language model (`kiki-oniric`) and a numpy-LIF thalamocortical spiking network (`esnn-thalamocortical`). Communication between heterogeneous modules is formalised as a substrate-agnostic **Nerve Protocol** with a measured polymorphism envelope. A behavioural benchmark (`bouba_sens`) stress-tests the same machinery on cross-modal plasticity.
@@ -16,7 +61,7 @@ Open-science discipline is public-by-default :
 - Bit-exact reproducibility contract **R1** : every experimental claim resolves to a deterministic `run_id` keyed on `(c_version, profile, seed, commit_sha, benchmark_version)`.
 - Dual-axis versioning (**DualVer**) : the formal-consistency axis (FC) and the empirical-consistency axis (EC) bump independently.
 - No AI co-authorship trailer. Byline credits *project contributors* ; individual authors are credited in §Acknowledgments per publication.
-- **Internal critical-validation before external review.** Every pre-registered finding passes through null-model controls, bootstrap confidence intervals, and multi-estimator robustness checks before publication. 2026-04-21 proof-of-concept: the `bouba_sens` v0.3 findings were **retracted by the lab** (v0.5.0, ADR-0006) when Sprint 7-8 critical tests downgraded all three to null results. See `bouba_sens/papers/paper1/main.md` for the methodology write-up.
+- **Internal critical-validation before external review.** Every pre-registered finding passes through null-model controls, bootstrap confidence intervals, multi-estimator robustness checks, and an independent critic-agent review before publication. Two proof-of-concept episodes : (a) 2026-04-21 — the `bouba_sens` v0.3 findings were **retracted by the lab** (v0.5.0, ADR-0006) when Sprint 7–8 critical tests downgraded all three to null. (b) **2026-05-11 — `bouba_sens` §5.5 Q3+ FINAL Retract** (v0.5.9, ADR-0019) : the qualitative +0.0125 Sprint-10 peak collapsed to noise once the Jonckheere test was replaced with the correct quadratic regression and the seed count was raised from 5 to 10 (sign p=0.62, paired t p=0.28). TMLR submission is BLOCKED until §5.5 is reformulated. Same night, `dream-of-kiki` Paper 1 §5.8 was rewritten to honest per-substrate FP framing (Cat C heterogeneity 1 % / 6 % / 80 %, no overstatement), the Conformance Criterion was strengthened to **C+** (now mandates C2 substrate-specific axiom property tests), and `nerve-wml` shipped six critic-driven fixes including an ablation void → cosine plasticity rewrite. The Popperian guardrails fire **inside** the lab.
 
 ---
 
@@ -91,19 +136,19 @@ Open-science discipline is public-by-default :
    cites §7.4│                          │ε-trace bridge (gate-dream partial)
              ▼                          ▼
    ┌──────────────────────┐   ┌──────────────────────┐
-   │  nerve-wml  v1.2.3   │   │  micro-kiki          │
-   │  10 gates · 184 cmt  │   │  34 niches + base    │
-   │  MlpWML · LifWML ·   │   │  Qwen3.6-35B-A3B     │
-   │  TransformerWML      │   │  971 tests · Aeon    │
+   │  nerve-wml  v1.8.1   │   │  micro-kiki          │
+   │  GTM tied-stable ·   │   │  34 niches + base    │
+   │  295 cmt · 7 N-verd. │   │  Qwen3.6-35B-A3B     │
+   │  4 scaling pre-regs  │   │  971 tests · Aeon    │
    │  Zenodo auto-DOI     │   │  Zenodo auto-DOI     │
    └──────────┬───────────┘   └──────────┬───────────┘
               │ shared codebook           │ gate-llm-advisor-passed
               ▼ (γ/θ multiplexer)         │ (NerveWmlAdvisor)
    ┌──────────────────────┐               │
-   │  bouba_sens v0.5.0   │               │
-   │  5-modality lesion   │               │
-   │  B-3 PASS 3/3 worlds │               │
-   │  ADRs 0003→0005      │               │
+   │  bouba_sens v0.5.9   │               │
+   │  §5.5 FINAL Retract  │               │
+   │  TMLR BLOCKED · N12  │               │
+   │  ADRs 0004→0019      │               │
    └──────────────────────┘               │
                                           ▼
                                (integration back into micro-kiki runtime)
