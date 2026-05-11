@@ -127,10 +127,11 @@ Open-science discipline is public-by-default :
                      ▼  numerical primitives
       ┌────────────────────────────────────────────────────────┐
       │  dream-of-kiki  (flagship, formal framework)           │
-      │  Axioms DR-0..DR-4, Conformance Criterion              │
+      │  Axioms DR-0..DR-4, Conformance Criterion C+ (C2)      │
       │  Substrates : MLX kiki-oniric + E-SNN thalamocortical  │
-      │  DualVer C-v0.7.0+PARTIAL · 277 tests / 91 % cov       │
-      │  Paper 1 v0.2 → PLOS Comp Bio    Paper 2 → NeurIPS     │
+      │  DualVer C-v0.10.0 · 481 cmt · tests/cov TBD post-5-11 │
+      │  Paper 1 v0.2 → PLOS Comp Bio                          │
+      │  Paper 2 → TMLR (N8/N9 OK) ; NeurIPS gated N10/N11     │
       └──────┬──────────────────────────┬──────────────────────┘
              │                          │
    cites §7.4│                          │ε-trace bridge (gate-dream partial)
@@ -147,8 +148,10 @@ Open-science discipline is public-by-default :
    ┌──────────────────────┐               │
    │  bouba_sens v0.5.9   │               │
    │  §5.5 FINAL Retract  │               │
-   │  TMLR BLOCKED · N12  │               │
-   │  ADRs 0004→0019      │               │
+   │  TMLR BLOCKED        │               │
+   │  N12 RUNNING + pool- │               │
+   │  v2 subgroup discov. │               │
+   │  ADRs 0004→0019 ✓    │               │
    └──────────────────────┘               │
                                           ▼
                                (integration back into micro-kiki runtime)
