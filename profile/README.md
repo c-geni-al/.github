@@ -134,14 +134,19 @@ Open-science discipline is public-by-default :
       │  Paper 2 → TMLR (N8/N9 OK) ; NeurIPS gated N10/N11     │
       └──────┬──────────────────────────┬──────────────────────┘
              │                          │
-   cites §7.4│                          │ε-trace bridge (gate-dream partial)
+   cites §7.4│                          │ε-trace bridge (gate-dream DEFERRED
+             │                          │  — kiki-oniric v0.5+ dormant)
              ▼                          ▼
    ┌──────────────────────┐   ┌──────────────────────┐
    │  nerve-wml  v1.8.1   │   │  micro-kiki          │
-   │  GTM tied-stable ·   │   │  34 niches + base    │
-   │  295 cmt · 7 N-verd. │   │  Qwen3.6-35B-A3B     │
-   │  4 scaling pre-regs  │   │  971 tests · Aeon    │
-   │  Zenodo auto-DOI     │   │  Zenodo auto-DOI     │
+   │  GTM tied-stable ·   │   │  Qwen3.6-35B-A3B MoE │
+   │  295 cmt · 7 N-verd. │   │  35 sigmoid auto-rtr │
+   │  4 scaling pre-regs  │   │  (34 niches + base)  │
+   │  Zenodo auto-DOI     │   │  Aeon · CAMP ·       │
+   │                      │   │  KnowBias · 10 SFT   │
+   │                      │   │  kiki-flow v0.3      │
+   │                      │   │  bridge surrogate    │
+   │                      │   │  971 tests · auto-DOI│
    └──────────┬───────────┘   └──────────┬───────────┘
               │ shared codebook           │ gate-llm-advisor-passed
               ▼ (γ/θ multiplexer)         │ (NerveWmlAdvisor)
